@@ -406,4 +406,9 @@ input[type=text]{
     #pokedex-right{
         width: 100%;
     }
+    
+        input:focus{
+            position: fixed;
+            top:50px;
+        }
 }
