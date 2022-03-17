@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pokedex.css">
+    <title>Pokédex</title>
+</head>
+<body>
+    <div id="container">
+        <div id="pokedex-left">
+            <div id="lights-container">
+                <div id="outer-circle">
+                    <div id="inner-circle"></div>
+                </div>
+                <div id="semaphore-indicators">
+                    <div class="semaphore-circle" id="red"></div>
+                    <div class="semaphore-circle" id="yellow"></div>
+                    <div class="semaphore-circle" id="green"></div>
+                </div>
+            </div>
+            <div id="screen-container">
+                <div id="screen-ligths">
+                    <div class="screen-circle"></div>
+                    <div class="screen-circle"></div>
+                </div>
+                <img id="img">
+                <div id="screen-idicators">
+                    <div id="light"></div>
+                    <div id="sound-container">
+                        <div class="sound"></div>
+                        <div class="sound"></div>
+                        <div class="sound"></div>
+                    </div>
+                </div>
+            </div>
+            <form id="fetch-pokemon">
+                <div id="buttons-container">
+                    <input type="submit" id="btn-circle" value=""/>
+                    <div class="btn-ligth" id="red-ligth"></div>
+                    <div class="btn-ligth" id="blue-ligth"></div>
+                </div>
+                <div id="input-pokemon">
+                    <div id="sound-pixel">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <input type="text" id="input" autofocus>
+                    <div id="d-pad">
+                        <div class="row" id="up"></div>
+                        <div>
+                            <div class="row" id="left"></div>
+                            <div class="row" id="center"></div>
+                            <div class="row" id="right"></div>
+                        </div>
+                        <div class="row" id="down"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="pokedex-right">
+            <div id="frame"></div>
+            <div id="data-screen">
+                <p>Type: <span id="type"> Water</span></p>
+                <div id="stats-container">
+                    <div class="porcentage-bar">
+                        <div class="bar"><div class="color-bar" id="ps"></div></div>
+                        <p>PS</p>
+                    </div>
+                    <div class="porcentage-bar">
+                        <div class="bar"><div class="color-bar" id="atk"></div></div>
+                        <p>ATK</p>
+                    </div>
+                    <div class="porcentage-bar">
+                        <div class="bar"><div class="color-bar" id="def"></div></div>
+                        <p>DEF</p>
+                    </div>
+                    <div class="porcentage-bar">
+                        <div class="bar"><div class="color-bar" id="spatk"></div></div>
+                        <p>SP.ATK</p>
+                    </div>
+                    <div class="porcentage-bar">
+                        <div class="bar"><div class="color-bar" id="spdef"></div></div>
+                        <p>SP.DEF</p>
+                    </div>
+                    <div class="porcentage-bar">
+                        <div class="bar"><div class="color-bar" id="speed"></div></div>
+                        <p>SPEED</p>
+                    </div>  
+                </div>
+            </div>
+            <div id="grid-buttons">
+                <div class="g-btn"></div>
+                <div class="g-btn"></div>
+                <div class="g-btn"></div>
+                <div class="g-btn"></div>
+                <div class="g-btn"></div>
+                <div class="g-btn"></div>
+                <div class="g-btn"></div>
+                <div class="g-btn"></div>
+                <div class="g-btn"></div>
+                <div class="g-btn"></div>
+            </div>
+            <div class="ligths-btns">
+                <div id="btns-flats-container">
+                    <div id="circles-container">
+                        <div class="small-circle"></div>
+                        <div class="small-circle"></div>
+                    </div>
+                    <div id="flats-container">
+                        <div class="flat"></div>
+                        <div class="flat"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="circles-squares-container">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div id="medium-circle"></div>
+            </div>
+            <div id="rectangles-container">
+                <div class="rectangle">
+                    <p>Altura:<span id="height"></span></p>
+                </div>
+                <div class="rectangle">
+                    <p>Peso:<span id="weight"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./fetchPokemon.js"></script>
+</body>
+</html>
